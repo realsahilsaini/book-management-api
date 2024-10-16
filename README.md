@@ -133,10 +133,7 @@ The server will be running on `http://localhost:3000`.
   - Description: Delete a comic book by its ID.
   - Response: `Comic Book Deleted`
 
-## Filtering Options
 
-Filtering options are available based on attributes like author, year, price, condition, etc. You can add query parameters to the GET requests to filter the results.
+---
 
-## License
-
-This project is licensed under the MIT License.
+>Test all the endpoints using Postman or any other API testing tool.
