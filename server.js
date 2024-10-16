@@ -7,6 +7,7 @@ require('dotenv').config();
 const app = express();
 app.use(bodyParser.json());
 
+
 connectDB();
 
 app.use('/api/v1/comics', comicRoutes);
