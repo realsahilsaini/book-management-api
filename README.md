@@ -167,6 +167,26 @@ The server will be running on `http://localhost:3000`.
     ]
     ```
 
+### Get Comic Books by Price Range
+
+- **GET** `/api/v1/comics/price/100/600`
+  - Description: Retrieve all comic books within a price range.
+  - Response:
+    ```json
+    [
+    {
+      "bookName": "Comic Title1",
+      "authorName": "Author Name1",
+      "yearOfPublication": 2022,
+      "price": 555,
+      "discount": "20",
+      "numberOfPages": 465,
+      "condition": "New",
+      "description": "This is a comic book1"
+    }
+    ]
+    ```
+
 ### Delete a Comic Book by ID
 
 - **DELETE** `/api/v1/comics/:id`

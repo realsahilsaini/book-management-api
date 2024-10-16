@@ -78,6 +78,14 @@ comicRouter.get('/year/:year', async (req,res)=>{
   res.status(200).json(comicBooks);
 });
 
+//Get all comic books by price range
+comicRouter.get('/price/:min/:max', async (req,res)=>{
+
+  const comicBooks = await ComicBook.find({price: {$gte: req.params.min, $lte: req.params.max}});
+
+  res.status(200).json(comicBooks);
+});
+
 
 
 
