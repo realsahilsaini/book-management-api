@@ -127,6 +127,36 @@ The server will be running on `http://localhost:3000`.
     ```
   - Response: `Comic Book Updated`
 
+### Get Comic Books by Author Name
+
+- **GET** `/api/v1/comics/author/:authorName`
+  - Description: Retrieve all comic books by author name.
+  - Response:
+    ```json
+    [
+    {
+      "bookName": "Comic Title1",
+      "authorName": "Author Name",
+      "yearOfPublication": 2022,
+      "price": 246,
+      "discount": "20",
+      "numberOfPages": 427,
+      "condition": "old",
+      "description": "This is a comic book1"
+    },{
+      "bookName": "Comic Title2",
+      "authorName": "Author Name",
+      "yearOfPublication": 2022,
+      "price": 246,
+      "discount": "20",
+      "numberOfPages": 427,
+      "condition": "old",
+      "description": "This is a comic book2"
+    }
+    ]
+    ```
+
+
 ### Delete a Comic Book by ID
 
 - **DELETE** `/api/v1/comics/:id`

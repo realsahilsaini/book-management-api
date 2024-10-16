@@ -61,9 +61,15 @@ comicRouter.delete('/:id', async (req,res)=>{
 });
 
 
-/*
-Filtering options are available based on attributes like author, year, price, condition, etc.
-*/
+//Get all comic books by author
+comicRouter.get('/author/:author', async (req,res)=>{
+
+  const comicBooks = await ComicBook.find({authorName: req.params.author});
+
+  res.status(200).json(comicBooks);
+});
+
+
 
 
 
