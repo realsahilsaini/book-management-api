@@ -9,6 +9,7 @@ This is a simple RESTful API for managing comic books. It allows you to create, 
 - Node.js
 - npm (Node Package Manager)
 - MongoDB
+- Zod (for data validation)
 
 ### Installation
 
