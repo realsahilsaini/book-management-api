@@ -129,33 +129,43 @@ The server will be running on `http://localhost:3000`.
 
 ### Get Comic Books by Author Name
 
-- **GET** `/api/v1/comics/author/:authorName`
+- **GET** `/api/v1/comics/author/authorXYZ`
   - Description: Retrieve all comic books by author name.
   - Response:
     ```json
     [
     {
       "bookName": "Comic Title1",
-      "authorName": "Author Name",
-      "yearOfPublication": 2022,
+      "authorName": "authorXYZ",
+      "yearOfPublication": 2024,
       "price": 246,
       "discount": "20",
       "numberOfPages": 427,
       "condition": "old",
       "description": "This is a comic book1"
-    },{
-      "bookName": "Comic Title2",
-      "authorName": "Author Name",
-      "yearOfPublication": 2022,
-      "price": 246,
-      "discount": "20",
-      "numberOfPages": 427,
-      "condition": "old",
-      "description": "This is a comic book2"
     }
     ]
     ```
 
+### Get Comic Books by Year of Publication
+
+- **GET** `/api/v1/comics/year/2022`
+  - Description: Retrieve all comic books by year of publication.
+  - Response:
+    ```json
+    [
+    {
+      "bookName": "Comic Title1",
+      "authorName": "Author Name1",
+      "yearOfPublication": 2022,
+      "price": 555,
+      "discount": "20",
+      "numberOfPages": 465,
+      "condition": "New",
+      "description": "This is a comic book1"
+    }
+    ]
+    ```
 
 ### Delete a Comic Book by ID
 

@@ -69,7 +69,14 @@ comicRouter.get('/author/:author', async (req,res)=>{
   res.status(200).json(comicBooks);
 });
 
+//Get all comic books by year
 
+comicRouter.get('/year/:year', async (req,res)=>{
+
+  const comicBooks = await ComicBook.find({yearOfPublication: req.params.year});
+
+  res.status(200).json(comicBooks);
+});
 
 
 
